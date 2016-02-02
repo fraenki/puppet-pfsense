@@ -1,6 +1,10 @@
-#pfsense
+#WARNING
 
-##Table of Contents
+This module is now OBSOLETE. All efforts have been shifted to OPNsense. The new
+project is available at https://github.com/fraenki/puppet-opnsense. For more
+information on OPNsense please visit https://opnsense.org/.
+
+####Table of Contents
 
 - [Overview](#overview)
 - [Module Description](#module-description)
@@ -159,3 +163,7 @@ You need to be aware of the following limitations:
 
 Please use the github issues functionality to report any bugs or requests for new features.
 Feel free to fork and submit pull requests for potential contributions.
+
+##Legal
+
+pfSense® is Copyright © 2004-2015 Electric Sheep Fencing LLC. All rights reserved.

@@ -1,0 +1,27 @@
+{
+  "name": "fraenki-pfsense",
+  "version": "99.99.99",
+  "author": "Frank Wall",
+  "summary": "Providers and facts for pfSense",
+  "license": "BSD-2-Clause",
+  "source": "https://github.com/fraenki/puppet-opnsense",
+  "project_page": "https://github.com/fraenki/puppet-opnsense",
+  "issues_url": "https://github.com/fraenki/puppet-pfsense/issues",
+  "description": "This is a collection of providers and facts to manage pfSense firewalls.",
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 2.7.0 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "FreeBSD",
+      "operatingsystemrelease": [
+        "8",
+        "9",
+        "10"
+      ]
+    }
+  ],
+}
