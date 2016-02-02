@@ -22,18 +22,18 @@ information on OPNsense please visit https://opnsense.org/.
 
 ##Overview
 
-This is a collection of providers and facts to manage pfSense firewalls.
+This is a collection of providers and facts to manage pfSense® firewalls.
 
-NOTE: This is NOT related to the pfSense project in any way. Do NOT ask the pfSense developers for support.
+NOTE: This is NOT related to the pfSense® project in any way. Do NOT ask the pfSense® developers for support.
 
 ##Module Description
 
 This is intended to be a growing collection of providers and facts. In its current state it provides the following features:
 
-* pfsense_user: a provider to manage pfSense users
-* pfsense_group: a provider to manage pfSense groups
-* package: a provider to manage native pfSense packages
-* pfsense_version: facts to gather pfSense version information
+* pfsense_user: a provider to manage pfSense® users
+* pfsense_group: a provider to manage pfSense® groups
+* package: a provider to manage native pfSense® packages
+* pfsense_version: facts to gather pfSense® version information
 
 Of course, it would be desirable to have a provider for cronjobs too. Contributions are welcome! :-)
 
@@ -93,7 +93,7 @@ Now you can use it like any other package provider:
       ensure => 'present',
     }
 
-NOTE: Package names on pfSense are case-sensitive. You need to write 'Cron' instead of 'cron' to install the package.
+NOTE: Package names on pfSense® are case-sensitive. You need to write 'Cron' instead of 'cron' to install the package.
 
 ###Deleting resources
 
@@ -145,16 +145,16 @@ To remove expiry date, set it to absent:
 
 ###Privileges
 
-You must specify user/group privileges by using the internal pfSense names. The provider will not even try to validate privilege names, because pfSense silently ignores invalid privileges.
+You must specify user/group privileges by using the internal pfSense® names. The provider will not even try to validate privilege names, because pfSense® silently ignores invalid privileges.
 
-A complete list of pfSense privileges is available in _priv.defs.inc_ from the pfSense repository:
+A complete list of pfSense® privileges is available in _priv.defs.inc_ from the pfSense® repository:
 https://github.com/pfsense/pfsense/blob/master/etc/inc/priv.defs.inc
 
 ###Known limitations
 
 You need to be aware of the following limitations:
 
-* No safety net. If you delete the _admin_ user your pfSense firewall is lost.
+* No safety net. If you delete the _admin_ user your pfSense® firewall is lost.
 * User/group providers are NOT aware of group privilege inheritance.
 * The indention of config.xml will be changed. Prepare for a huge diff when making changes.
 * Removing all unmanaged resources (purge => true) is NOT supported.
